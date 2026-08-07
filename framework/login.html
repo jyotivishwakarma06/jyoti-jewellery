@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Login | Jyoti Jewellery</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+body{
+
+background:linear-gradient(135deg,#fff8e8,#fde8c6);
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.login-box{
+
+background:#fff;
+
+width:420px;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+text-align:center;
+
+font-size:32px;
+
+font-weight:bold;
+
+color:#d4af37;
+
+margin-bottom:25px;
+
+}
+
+.form-control{
+
+height:50px;
+
+}
+
+.btn-login{
+
+background:#d4af37;
+
+color:white;
+
+height:50px;
+
+font-weight:bold;
+
+}
+
+.btn-login:hover{
+
+background:#b88c1d;
+
+color:white;
+
+}
+
+.extra{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:15px;
+
+font-size:14px;
+
+}
+
+.extra a{
+
+text-decoration:none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<div class="logo">
+
+💍 Jyoti Jewellery
+
+</div>
+
+<h3 class="text-center mb-4">
+
+Login
+
+</h3>
+
+<form onsubmit="loginUser(event)">
+
+<input
+type="email"
+id="email"
+class="form-control mb-3"
+placeholder="Enter Email"
+required>
+
+<div class="input-group mb-3">
+
+<input
+type="password"
+id="password"
+class="form-control"
+placeholder="Password"
+required>
+
+<button
+class="btn btn-outline-secondary"
+type="button"
+onclick="togglePassword()">
+
+<i class="fa-solid fa-eye"></i>
+
+</button>
+
+</div>
+
+<div class="form-check mb-3">
+
+<input
+class="form-check-input"
+type="checkbox">
+
+<label class="form-check-label">
+
+Remember Me
+
+</label>
+
+</div>
+
+<button
+class="btn btn-login w-100">
+
+Login
+
+</button>
+
+<div class="extra">
+
+<a href="#">Forgot Password?</a>
+
+<a href="register.html">
+
+Create Account
+
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+<script>
+
+function togglePassword(){
+
+let pass=document.getElementById("password");
+
+pass.type=pass.type==="password" ? "text":"password";
+
+}
+
+function loginUser(e){
+
+e.preventDefault();
+
+let email=document.getElementById("email").value;
+
+let password=document.getElementById("password").value;
+
+let user=JSON.parse(localStorage.getItem("user"));
+
+if(user==null){
+
+alert("Please Register First");
+
+window.location.href="register.html";
+
+return;
+
+}
+
+if(email===user.email && password===user.password){
+
+alert("Login Successful ❤️");
+
+window.location.href="index.html";
+
+}
+
+else{
+
+alert("Invalid Email or Password");
+
+}
+
+}
+
+e.preventDefault();
+
+let email=document.getElementById("email").value;
+
+let password=document.getElementById("password").value;
+
+if(email==="" || password===""){
+
+alert("Please fill all fields");
+
+return;
+
+}
+
+localStorage.setItem("user",email);
+
+alert("Login Successful ❤️");
+
+window.location.href="index.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

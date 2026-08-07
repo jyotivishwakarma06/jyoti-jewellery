@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Earring  Collection</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#f8f9fa;
+}
+
+.banner{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.card img{
+    height:250px;
+    object-fit:cover;
+    margin-bottom: 8px;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    transition:.4s;
+}
+
+.price{
+    color:#d4af37;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.discount-price{
+    color:#d4a017;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.original-price{
+    color: #000;
+    text-decoration: line-through;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand text-warning fw-bold"
+   href="index.html">
+
+Jyoti Jewellery
+
+</a>
+
+<button class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#nav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+     id="nav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link"
+   href="index.html">
+Home
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+   href="rings.html">
+Rings
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+   href="#">
+Contact
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Banner -->
+<section class="banner">
+<h1>✨ Earring Collection</h1>
+<p>Explore Our Premium Earring Collection</p>
+</section>
+
+<!-- Earring -->
+<section class="py-5">
+<div class="container">
+
+<div class="row g-4">
+<!-----Small Earring Card---->
+<div class="col-md-4">
+<div class="card shadow">
+<img src="images/se.jpg"class="card-img-top">
+<a href="smallearring.html" class="text-decoration-none text-dark">
+<div class="card-body text-center">
+    <h5>Small Earring</h5>
+    <p class="price">Starts ₹24,999</p>
+    <button class="btn btn-warning">
+        View Collection
+    </button>
+</div>
+</a>
+
+</div>
+</div>
+
+<!----Long Earring Card---->
+<div class="col-md-4">
+<div class="card shadow">
+<img src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg"class="card-img-top">
+<a href="longearring.html" class="text-decoration-none text-dark">
+<div class="card-body text-center">
+<h5 class="card-title mb-2">Long Earrings</h5>
+<h4 class="text-warning fw-bold mb-1">₹65,999</h4>
+<h5 class="text-decoration-line-through mt-0 mb-3">₹69,999</h5>
+<button class="btn btn-warning">View Collection</button>
+<!-----
+    <h5>Long Earrings</h5>
+<p class="price">₹65,999</p>
+<h4><strike>69,999</strike></h4>
+--->
+
+</div>
+</a>
+</div>
+</div>
+<!----Wedding Earring Card---->
+<div class="col-md-4">
+<div class="card shadow">
+<img src="images/le1.jpg"
+class="card-img-top">
+
+<a href="weddingearring.html" class="text-decoration-none text-dark">
+<div class="card-body text-center">
+    <h5>Wedding Earring</h5>
+    <p class="price">Starts ₹1,24,999</p>
+    <button class="btn btn-warning">
+        View Collection
+    </button>
+</div>
+</a>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+  <!-----Footer------->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 Jyoti Jewellery || Designed By Jyoti Vishwakarma
+            </p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
