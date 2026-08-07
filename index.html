@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jyoti Jewellery</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!---- NAVBAR ---->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold text-warning" href="index.html">
+                💎 Jyoti Jewellery
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fa-solid fa-house text-warning"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collection">
+                            Collection
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="wishlist.html">
+                            ❤️ Wishlist
+                            <span class="badge bg-danger" id="wishlistCount">0</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            🛒 Cart
+                            <span class="badge bg-warning text-dark" id="cartCount">0</span>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+
+               <form class="d-flex ms-lg-3 mt-3 mt-lg-0"
+onsubmit="return searchProduct()">
+
+    <input
+        class="form-control me-2"
+        id="searchBox"
+        type="search"
+        placeholder="Search Jewellery">
+
+    <button class="btn btn-warning" type="submit">
+
+        Search
+
+    </button>
+
+</form>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-----END NAVBAR ---->
+
+    <!----- HERO SLIDER ------->
+
+    <section id="home">
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <!-- Indicators -->
+
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+
+            </div>
+
+            <!-- Images -->
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="images/ban1.jpg" class="d-block w-100" alt="Banner 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/ban4.jpg" class="d-block w-100" alt="Banner 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/ban5.jpg" class="d-block w-100" alt="Banner 3">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/ban2.jpg" class="d-block w-100" alt="Banner 4">
+                </div>
+
+            </div>
+
+            <!-- Previous -->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <!-- Next -->
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!------ HERO END SLIDER --->
+
+    
+
+    <!------CATEGORIES ----->
+
+    <section id="category" class="categories" style="background-color: rgba(121, 79, 79, 0.725);">
+
+        <div class="container">
+
+            <h1 class="category-title text-center"> Our Categories </h1>
+
+            <div class="row g-4">
+
+                <!-- Rings -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <a href="ring.html" class="text-decoration-none text-dark">
+
+                        <div class="card shadow border-0 h-100 text-center">
+
+                            <div class="card-body">
+
+                                <div class="display-4 mb-3">
+
+                                    💍
+
+                                </div>
+
+                                <h4>
+
+                                    Rings
+
+                                </h4>
+
+                                <p>
+
+                                    Beautiful Diamond Rings
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <!-- Necklace -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <a href="neckless.html" class="text-decoration-none text-dark">
+
+                        <div class="card shadow border-0 h-100 text-center">
+
+                            <div class="card-body">
+
+                                <div class="display-4 mb-3">
+
+                                    📿
+
+                                </div>
+
+                                <h4>
+
+                                    Necklaces
+
+                                </h4>
+
+                                <p>
+
+                                    Elegant Gold Necklaces
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <!-- Earrings -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <a href="earring.html" class="text-decoration-none text-dark">
+
+                        <div class="card shadow border-0 h-100 text-center">
+
+                            <div class="card-body">
+
+                                <div class="display-4 mb-3">
+
+                                    ✨
+
+                                </div>
+
+                                <h4>
+
+                                    Earrings
+
+                                </h4>
+
+                                <p>
+
+                                    Premium Designer Earrings
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <!-- Bridal -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <a href="bridal.html" class="text-decoration-none text-dark">
+
+                        <div class="card shadow border-0 h-100 text-center">
+
+                            <div class="card-body">
+
+                                <div class="display-4 mb-3">
+
+                                    👑
+
+                                </div>
+
+                                <h4>
+
+                                    Bridal Sets
+
+                                </h4>
+
+                                <p>
+
+                                    South, North & Royal Bridal Jewellery
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!---END CATEGORIES--->
+
+    <!----- Store Locator------>
+    <section class="store-section">
+
+        <!-- Background Map -->
+        <div class="map-bg"></div>
+
+        <!-- Dark Overlay -->
+        <div class="overlay">
+
+            <div class="container">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-8 text-center">
+
+                        <h1 class="store-title">
+                            Find a Store Near You
+                        </h1>
+
+                        <p class="store-subtitle">
+                            Find your nearest Jyoti Jewellery showroom.
+                        </p>
+
+                        <div class="search-wrapper">
+
+                            <div class="input-group shadow-lg">
+
+                                <span class="input-group-text bg-white border-0">
+                                    <i class="fa-solid fa-location-dot text-secondary"></i>
+                                </span>
+
+                                <input type="text" id="city" class="form-control border-0"
+                                    placeholder="Enter Pincode or City">
+
+                                <button type="button" class="btn btn-search" onclick="searchCity()">
+
+                                    Search
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-----End Store Locator----->
+    <!-----Cities------->
+    <section class="city-section">
+
+        <div class="container">
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Mumbai -->
+
+                <div class="col-lg col-md-4 col-sm-6 col-6">
+
+                    <a href="https://www.google.com/maps/search/Jyoti+Jewellery+Mumbai/" target="_blank"
+                        class="text-decoration-none">
+
+                        <div class="city-card">
+
+                            <img src="images/mumbai.jpg">
+
+                            <h5>Mumbai</h5>
+
+                            <p>27 Stores</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <!-- Delhi -->
+                <div class="col-lg col-md-4 col-sm-6 col-6">
+
+                    <a href="https://www.google.com/maps/search/Jewellery+Shop+Delhi/" target="_blank"
+                        class="text-decoration-none">
+
+                        <div class="city-card">
+
+                            <img src="images/delhi.jpg">
+
+                            <h5>Delhi</h5>
+
+                            <p>37 Stores</p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <!-- Bangalore -->
+
+                <div class="col-xl col-lg-3 col-md-4 col-6">
+                    <a href="https://www.google.com/maps/search/jewellery+shop+bangalore/" target="_blank"
+                        class="text-decoration-none">
+
+                        <div class="city-card">
+
+                            <img src="images/banglore.jpg" alt="Bangalore">
+
+                            <h5>Bangalore</h5>
+
+                            <p>30 Stores</p>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Pune -->
+
+                <div class="col-xl col-lg-3 col-md-4 col-6">
+                    <a href="https://www.google.com/maps/search/jewellery+shop+pune/" target="_blank"
+                        class="text-decoration-none">
+                        <div class="city-card">
+
+                            <img src="images/pune.jpg" alt="Pune">
+
+                            <h5>Pune</h5>
+
+                            <p>11 Stores</p>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Kolkata -->
+
+                <div class="col-xl col-lg-3 col-md-4 col-6">
+                    <a href="https://www.google.com/maps/search/jewellery+shop+kolkata/" target="_blank"
+                        class="text-decoration-none">
+
+                        <div class="city-card">
+
+                            <img src="images/kolkata.jpg" alt="Kolkata">
+
+                            <h5>Kolkata</h5>
+
+                            <p>19 Stores</p>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Chennai -->
+
+                <div class="col-xl col-lg-3 col-md-4 col-6">
+                    <a href="https://www.google.com/maps/search/jewellery+shop+chennai/" target="_blank"
+                        class="text-decoration-none">
+
+                        <div class="city-card">
+
+                            <img src="images/chennai.jpg" alt="Chennai">
+
+                            <h5>Chennai</h5>
+
+                            <p>15 Stores</p>
+
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-- Ahmedabad -->
+
+                <div class="col-xl col-lg-3 col-md-4 col-6">
+                    <a href="https://www.google.com/maps/search/jewellery+shop+ahmedabad/" target="_blank"
+                        class="text-decoration-none">
+
+                        <div class="city-card">
+
+                            <img src="images/ahmedabad.jpg" alt="Ahmedabad">
+
+                            <h5>Ahmedabad</h5>
+
+                            <p>7 Stores</p>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!---End Cities-->
+    <!--- Featured Products---->
+    <section id="collection" class="collection" style="background: linear-gradient(to right, #8fe9ef93, #bbef94e3, #95cbdcd2 )";>
+        <div class=" container">
+
+        <h1 class="text-center section-title">Featured Products</h1>
+
+
+        <div class="row g-4">
+<!--product 1-->
+            <div class="col-md-4">
+                <div class="card shadow border-0 product-card">
+                    <img src="images/d7.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="product-name">Diamond Ring</h5>
+                        <p class="price">₹29,999</p>
+                        <a href="daimondring.html" class="btn btn-warning">
+
+                            View Details
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!---product 2-->
+            <div class="col-md-4">
+                <div class="card shadow border-0 product-card">
+                    <img src="https://images.pexels.com/photos/10983783/pexels-photo-10983783.jpeg"
+                        class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="product-name">Luxury Earrings</h5>
+                        <p class="price">₹59,999</p>
+                        <a href="earring.html" class="btn btn-warning">
+
+                            View Details
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!---product3-->
+            <div class="col-md-4">
+                <div class="card shadow border-0 product-card">
+                    <img src="images/gr.jpg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="product-name">Gold Ring</h5>
+                        <p class="price">₹19,999</p>
+                        <a href="goldring.html" class="btn btn-warning">
+
+                            View Details
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!---End Featured Products-->
+
+    <!------ ABOUT ---->
+    <section id="about" class="py-5 about-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h1 class="about-title">About Our Brand</h1>
+
+                    <p class="about-text">
+                        <span class="brand-name">💎 Jyoti Jewellery</span> is a trusted destination for exceptional
+                        jewellery,
+                        renowned for authentic craftsmanship and exclusive collections.
+                        Whether you're looking for traditional bridal gold,
+                        modern diamond pieces, or elegant Hyderabadi pearls,
+                        we offer jewellery to suit every style and budget.
+                    </p>
+
+                    <ul class="about-list">
+                        <li>
+                            Jyoti Jewellery brings timeless elegance and modern craftsmanship together.
+                            Our collections are designed to celebrate every special moment in life.
+                        </li>
+
+                        <li>
+                            We offer certified bridal gold jewellery, diamond collections,
+                            daily wear ornaments, and exclusive festive designs with premium quality.
+                        </li>
+
+                        <li>
+                            We also provide elegant silver jewellery, contemporary collections,
+                            and customized designs crafted with perfection.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="https://images.pexels.com/photos/1454171/pexels-photo-1454171.jpeg"
+                        class="img-fluid rounded shadow about-img" alt="Jewellery">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!------ END ABOUT ---->
+    <!----- Contact ----->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+
+            <h2 class="text-center section-title">Contact Us</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+
+                    <form action="#">
+                        <input type="text" class="form-control mb-3" placeholder="Your Name">
+
+                        <input type="email" class="form-control mb-3" placeholder="Your Email">
+
+                        <textarea rows="5" class="form-control mb-3" placeholder="your Message"></textarea>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-warning px-5">
+
+                                Send Message
+
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    |<!----END CONTACT-->
+    <!-----FOOTER------->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2026 Jyoti Jewellery || Designed By Jyoti Vishwakarma
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-----Bootstrap JS----->
+    <script>
+
+        function updateCounts() {
+
+            let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            document.getElementById("wishlistCount").innerText = wishlist.length;
+
+            let totalQty = 0;
+
+            cart.forEach(item => {
+                totalQty += item.qty;
+            });
+
+            document.getElementById("cartCount").innerText = totalQty;
+
+        }
+
+        updateCounts();
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!----Search Product-->
+    <script>
+
+function searchProduct(){
+
+    let search =
+    document.getElementById("searchBox").value.toLowerCase().trim();
+
+    if(search=="ring"){
+
+        window.location.href="ring.html";
+
+    }
+    
+    else if(search=="bridal"){
+
+        window.location.href="bridal.html";
+
+    }
+
+    else if(search=="neckless"){
+
+        window.location.href="neckless.html";
+
+    }
+
+    else if(search=="earring" || search=="earrings"){
+
+        window.location.href="earring.html";
+
+    }
+
+    else if(search=="bangle"){
+
+        window.location.href="bangle.html";
+
+    }
+
+    else if(search=="longneckless"){
+
+        window.location.href="longneckless.html";
+
+    }
+
+    else if(search=="southindian"){
+
+        window.location.href="southindian.html";
+
+    }
+
+    else{
+
+        alert("Product Not Found");
+
+    }
+
+    return false;
+
+}
+
+</script>
+
+
+</body>
+
+</html>
