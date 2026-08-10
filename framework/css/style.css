@@ -600,3 +600,47 @@ transform:scale(1.2);
 }
 
 }
+
+
+/* Bridal Collection Marquee */
+
+.bridal-marquee {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #fff3cd, #ffe8a1, #fff3cd);
+    border-top: 1px solid #e0b84c;
+    border-bottom: 1px solid #e0b84c;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: bridalScroll 18s linear infinite;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.marquee-content a {
+    color: #8a5a00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.marquee-content a:hover {
+    text-decoration: underline;
+}
+
+@keyframes bridalScroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
