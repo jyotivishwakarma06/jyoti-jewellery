@@ -601,8 +601,9 @@ transform:scale(1.2);
 
 }
 
-
-/* Bridal Collection Marquee */
+/* ================================
+   BRIDAL COLLECTION MARQUEE
+================================ */
 
 .bridal-marquee {
     width: 100%;
@@ -611,7 +612,6 @@ transform:scale(1.2);
     border-top: 1px solid #e0b84c;
     border-bottom: 1px solid #e0b84c;
     padding: 12px 0;
-    margin: 0;
 }
 
 .marquee-content {
